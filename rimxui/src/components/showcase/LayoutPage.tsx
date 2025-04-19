@@ -2,9 +2,9 @@ import { Box, Flex, Grid, Stack } from "../Layout/Layout";
 import PreviewWrapper from "../PreviewWrapper";
 import { Typography } from "../Typography/Typography";
 import {
-  ShowcaseAPIReference,
-  ShowcaseGuidelines,
-  ShowcaseHeader,
+    ShowcaseAPIReference,
+    ShowcaseGuidelines,
+    ShowcaseHeader,
 } from "./common";
 
 export const LayoutPreview = () => {
