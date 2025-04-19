@@ -24,6 +24,7 @@ const navigation = [
   { name: "Input", path: ROUTES.inputDocs },
   { name: "Otp Input", path: ROUTES.otpDocs },
   { name: "Label", path: ROUTES.labelDocs },
+  { name: "Layout", path: ROUTES.layoutDocs },
   { name: "Typography", path: ROUTES.typographyDocs },
   { name: "Lists", path: ROUTES.listsDocs },
   { name: "Modals", path: ROUTES.modalsDocs },

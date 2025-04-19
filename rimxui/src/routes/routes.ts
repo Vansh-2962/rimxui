@@ -44,6 +44,7 @@ export const ROUTES = {
   buttonsDocs: `/docs/${CHILD_ROUTES.docs.buttons}`,
   cardsDocs: `/docs/${CHILD_ROUTES.docs.cards}`,
   listsDocs: `/docs/${CHILD_ROUTES.docs.lists}`,
+  layoutDocs: `/docs/${CHILD_ROUTES.docs.layout}`,
   shadowsDocs: `/docs/${CHILD_ROUTES.docs.shadows}`,
   modalsDocs: `/docs/${CHILD_ROUTES.docs.modals}`,
   toastsDocs: `/docs/${CHILD_ROUTES.docs.toasts}`,
