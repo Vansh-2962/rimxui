@@ -5,6 +5,7 @@ export const CHILD_ROUTES = {
     typography: "typography",
     buttons: "buttons",
     cards: "cards",
+    layout: "layout",
     lists: "lists",
     shadows: "shadows",
     modals: "modals",

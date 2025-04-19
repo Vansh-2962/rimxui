@@ -31,6 +31,7 @@ import SelectPage from "@/components/showcase/SelectPage";
 import MorphedButton from "@/components/showcase/MorphedButton";
 import OTPPage from "@/components/showcase/OtpPage";
 import CliTabPage from "@/components/showcase/CliTabPage";
+import { LayoutPreview } from "@/components/showcase/LayoutPage";
 
 
 export const ROUTE_COMPONENTS: Array<RouteObject> = [
@@ -86,7 +87,10 @@ export const ROUTE_COMPONENTS: Array<RouteObject> = [
         path: CHILD_ROUTES.docs.lists,
         element: <ListPage />,
       },
-
+      {
+        path: CHILD_ROUTES.docs.layout,
+        element: <LayoutPreview />,
+      },
       {
         path: CHILD_ROUTES.docs.shadows,
         element: <ShadowShowcase />,
