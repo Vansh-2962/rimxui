@@ -7,7 +7,7 @@ import {
   ListVariants,
 } from "../List";
 import PreviewWrapper from "../PreviewWrapper";
-import { Typography } from "../typography/Typography";
+import { Typography } from "../Typography/Typography";
 import {
   ShowcaseAPIReference,
   ShowcaseGuidelines,
