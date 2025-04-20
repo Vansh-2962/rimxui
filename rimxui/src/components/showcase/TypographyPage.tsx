@@ -1,11 +1,11 @@
+import PreviewWrapper from "../PreviewWrapper";
 import {
+  Typography,
   TypographyHeadingLevels,
   TypographySizes,
   TypographyVariants,
   TypographyWeight,
-} from "@/types";
-import PreviewWrapper from "../PreviewWrapper";
-import { Typography } from "../typography/Typography";
+} from "../Typography/Typography";
 import {
   ShowcaseAPIReference,
   ShowcaseGuidelines,

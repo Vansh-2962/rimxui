@@ -2,6 +2,7 @@ import Navbarone from "../Navbar/Navbarone";
 import NavbarCenteredLogo from "../Navbar/NavbarCenteredLogo";
 import NavbarGradient from "../Navbar/NavbarGradient";
 import PreviewWrapper from "../PreviewWrapper";
+import { CliTabs } from "../CliTabs/CliTab";
 
 const responsiveNavbarCode = `
 import { useState } from "react";
@@ -97,23 +98,39 @@ export default NavbarGradient;
 
 function NavbarPage() {
   return (
-    <div className="flex flex-col gap-10">
-      <PreviewWrapper
-        label="Responsive Navbar"
-        preview={<Navbarone />}
-        code={responsiveNavbarCode}
-      />
-      <PreviewWrapper
-        label="Centered Logo Navbar"
-        preview={<NavbarCenteredLogo />}
-        code={centeredLogoCode}
-      />
-      <PreviewWrapper
-        label="Gradient Navbar"
-        preview={<NavbarGradient />}
-        code={gradientNavbarCode}
-      />
-    </div>
+    <>
+      <section id="#installation">
+        <h1 className="text-h4 mb-6">Installation</h1>
+        <CliTabs
+          commands={{
+            pnpm: "pnpm dlx shadcn@latest add http://rimxui.vercel.app/registry/navbars.json",
+            npm: "npx shadcn@latest add http://rimxui.vercel.app/registry/navbars.json",
+            bun: "bunx shadcn@latest add http://rimxui.vercel.app/registry/navbars.json",
+            yarn: "yarn dlx shadcn@latest add http://rimxui.vercel.app/registry/navbars.json",
+          }}
+        />
+      </section>
+      <div className="flex flex-col gap-10">
+        <PreviewWrapper
+          variant="centered"
+          label="Responsive Navbar"
+          preview={<Navbarone />}
+          code={responsiveNavbarCode}
+        />
+        <PreviewWrapper
+          variant="centered"
+          label="Centered Logo Navbar"
+          preview={<NavbarCenteredLogo />}
+          code={centeredLogoCode}
+        />
+        <PreviewWrapper
+          variant="centered"
+          label="Gradient Navbar"
+          preview={<NavbarGradient />}
+          code={gradientNavbarCode}
+        />
+      </div>
+    </>
   );
 }
 

@@ -1,13 +1,40 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  darkMode: "selector", 
+  darkMode: "selector",
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   safelist: [
     // Generate all color utilities for the specific scales to ensure they're available
     // even if not directly found in the content
-    { pattern: /^bg-(primary|neutral|success|error|warning|info|accent)-(50|100|200|300|400|500|600|700|800|900)$/ },
-    { pattern: /^text-(primary|neutral|success|error|warning|info|accent)-(50|100|200|300|400|500|600|700|800|900)$/ },
-    { pattern: /^border-(primary|neutral|success|error|warning|info|accent)-(50|100|200|300|400|500|600|700|800|900)$/ },
+    {
+      pattern:
+        /^bg-(primary|neutral|success|error|warning|info|accent)-(50|100|200|300|400|500|600|700|800|900)$/,
+    },
+    {
+      pattern:
+        /^text-(primary|neutral|success|error|warning|info|accent)-(50|100|200|300|400|500|600|700|800|900)$/,
+    },
+    {
+      pattern:
+        /^border-(primary|neutral|success|error|warning|info|accent)-(50|100|200|300|400|500|600|700|800|900)$/,
+    },
+    // Add arbitrary value patterns for width and height
+    { pattern: /^w-\[.*\]$/ },
+    { pattern: /^h-\[.*\]$/ },
+    // Add arbitrary value patterns for spacing
+    { pattern: /^p-\[.*\]$/ },
+    { pattern: /^px-\[.*\]$/ },
+    { pattern: /^py-\[.*\]$/ },
+    { pattern: /^pt-\[.*\]$/ },
+    { pattern: /^pr-\[.*\]$/ },
+    { pattern: /^pb-\[.*\]$/ },
+    { pattern: /^pl-\[.*\]$/ },
+    { pattern: /^m-\[.*\]$/ },
+    { pattern: /^mx-\[.*\]$/ },
+    { pattern: /^my-\[.*\]$/ },
+    { pattern: /^mt-\[.*\]$/ },
+    { pattern: /^mr-\[.*\]$/ },
+    { pattern: /^mb-\[.*\]$/ },
+    { pattern: /^ml-\[.*\]$/ },
   ],
   theme: {
     extend: {

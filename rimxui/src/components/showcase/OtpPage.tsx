@@ -1,3 +1,4 @@
+import { CliTabs } from "../CliTabs/CliTab";
 import OtpInput from "../Otp/otp";
 import PreviewWrapper from "../PreviewWrapper";
 import { CliTabs } from "../CliTabs/CliTab";
@@ -14,10 +15,10 @@ export default function OTPPage() {
         <h1 className="text-h4 mb-6">Installation</h1>
         <CliTabs
           commands={{
-            pnpm: "pnpm dlx shadcn@latest add http://rimxui.vercel.app/registry/darkmode.json",
-            npm: "npx shadcn@latest add http://rimxui.vercel.app/registry/darkmode.json",
-            bun: "bunx shadcn@latest add http://rimxui.vercel.app/registry/darkmode.json",
-            yarn: "yarn dlx shadcn@latest add http://rimxui.vercel.app/registry/darkmode.json",
+            pnpm: "pnpm dlx shadcn@latest add http://rimxui.vercel.app/registry/otpinputs.json",
+            npm: "npx shadcn@latest add http://rimxui.vercel.app/registry/otpinputs.json",
+            bun: "bunx shadcn@latest add http://rimxui.vercel.app/registry/otpinputs.json",
+            yarn: "yarn dlx shadcn@latest add http://rimxui.vercel.app/registry/otpinputs.json",
           }}
         />
       </section>

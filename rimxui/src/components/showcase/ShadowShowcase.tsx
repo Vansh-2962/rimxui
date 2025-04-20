@@ -1,3 +1,4 @@
+import { CliTabs } from "../CliTabs/CliTab";
 import PreviewWrapper from "../PreviewWrapper";
 
 const shadowVariants = [
@@ -46,9 +47,15 @@ const ShadowPreview = () => {
             </span>
           </div>
           <div className="space-y-1">
-            <p className="text-sm font-medium text-neutral-900 dark:text-neutral-100">{shadow.name}</p>
-            <p className="text-sm text-neutral-500 dark:text-neutral-400">{shadow.description}</p>
-            <p className="text-sm font-mono text-neutral-500 dark:text-neutral-400">{shadow.class}</p>
+            <p className="text-sm font-medium text-neutral-900 dark:text-neutral-100">
+              {shadow.name}
+            </p>
+            <p className="text-sm text-neutral-500 dark:text-neutral-400">
+              {shadow.description}
+            </p>
+            <p className="text-sm font-mono text-neutral-500 dark:text-neutral-400">
+              {shadow.class}
+            </p>
           </div>
         </div>
       ))}
@@ -70,9 +77,21 @@ export const ShadowShowcase = () => {
       <div>
         <h1 className="text-3xl font-bold mb-2">Shadows</h1>
         <p className="text-neutral-600 dark:text-neutral-400">
-          A collection of shadow utilities for adding depth and elevation to elements.
+          A collection of shadow utilities for adding depth and elevation to
+          elements.
         </p>
       </div>
+      <section id="#installation">
+        <h1 className="text-h4 mb-6">Installation</h1>
+        <CliTabs
+          commands={{
+            pnpm: "pnpm dlx shadcn@latest add http://rimxui.vercel.app/registry/shadows.json",
+            npm: "npx shadcn@latest add http://rimxui.vercel.app/registry/shadows.json",
+            bun: "bunx shadcn@latest add http://rimxui.vercel.app/registry/shadows.json",
+            yarn: "yarn dlx shadcn@latest add http://rimxui.vercel.app/registry/shadows.json",
+          }}
+        />
+      </section>
 
       <PreviewWrapper
         label="Shadow Examples"
@@ -84,4 +103,4 @@ export const ShadowShowcase = () => {
   );
 };
 
-export default ShadowShowcase; 
+export default ShadowShowcase;

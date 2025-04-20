@@ -6,6 +6,7 @@ import {
   SelectValue,
 } from "@/components/Select/Select";
 import PreviewWrapper from "../PreviewWrapper";
+import { CliTabs } from "../CliTabs/CliTab";
 
 const SelectPage = () => {
   return (
@@ -17,6 +18,17 @@ const SelectPage = () => {
             Displays a button or a component that looks like a button.
           </p>
         </div>
+        <section id="#installation">
+          <h1 className="text-h4 mb-6">Installation</h1>
+          <CliTabs
+            commands={{
+              pnpm: "pnpm dlx shadcn@latest add http://rimxui.vercel.app/registry/selects.json",
+              npm: "npx shadcn@latest add http://rimxui.vercel.app/registry/selects.json",
+              bun: "bunx shadcn@latest add http://rimxui.vercel.app/registry/selects.json",
+              yarn: "yarn dlx shadcn@latest add http://rimxui.vercel.app/registry/selects.json",
+            }}
+          />
+        </section>
         <div className="grid">
           <PreviewWrapper
             label="Select Component"

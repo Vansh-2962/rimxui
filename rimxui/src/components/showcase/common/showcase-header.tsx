@@ -1,4 +1,4 @@
-import { Typography } from "@/components/typography";
+import { Typography } from "@/components/Typography";
 
 interface ShowcaseHeaderProps {
   title: string;
