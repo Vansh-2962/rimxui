@@ -47,16 +47,16 @@ const GetStartedSection: React.FC = () => {
           </p>
         </motion.div>
 
-        <div className="flex items-center justify-center">
+        <div className="flex items-center justify-center  flex-wrap">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.5 }}
-            className="w-1/2"
+            className="md:w-1/2 w-96"
           >
             <motion.div
-              className="mt-8 bg-white/80 dark:bg-slate-800/80 backdrop-blur-lg rounded-xl p-6 shadow-xl border border-gray-100 dark:border-slate-700"
+              className="mt-8 bg-white/80 dark:bg-slate-800/80 backdrop-blur-lg rounded-xl p-6 shadow-xl border border-gray-100 dark:border-slate-700 "
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-100px" }}

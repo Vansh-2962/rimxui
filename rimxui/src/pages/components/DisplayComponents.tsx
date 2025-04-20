@@ -25,7 +25,7 @@ const components = [
     description:
       "Versatile button components with multiple variants and states",
     demo: (
-      <div className="flex flex-wrap gap-3">
+      <div className="flex flex-wrap gap-3 items-center justify-center">
         <Button label="Default" variant="default" />
         <Button label="Destructive" variant="destructive" />
         <Button label="Secondary" variant="secondary" />
@@ -46,29 +46,32 @@ const components = [
     name: "Cards",
     description: "Elegant card components for displaying content in containers",
     demo: (
-      <Card>
-        <img
-          src="https://images.unsplash.com/photo-1682687220063-4742bd7fd538"
-          alt="Card image"
-          className="w-full h-48 object-cover rounded-t-xl"
-        />
-        <CardContent className="pt-4">
-          <h3 className="text-xl font-semibold mb-2">Beautiful Landscape</h3>
-          <p className="text-gray-600">
-            This is a beautiful landscape image displayed in a card with a title
-            and description.
-          </p>
-        </CardContent>
-        <CardFooter className="flex justify-between items-center">
-          <span className="text-sm text-gray-500">Posted by John Doe</span>
-          <button className="text-blue-500 hover:text-blue-600">
-            Read more
-          </button>
-        </CardFooter>
-      </Card>
+      <div className="place-items-center">
+        <Card>
+          <img
+            src="https://images.unsplash.com/photo-1682687220063-4742bd7fd538"
+            alt="Card image"
+            className="w-full h-48 object-cover rounded-t-xl"
+          />
+          <CardContent className="pt-4">
+            <h3 className="text-xl font-semibold mb-2">Beautiful Landscape</h3>
+            <p className="text-gray-600">
+              This is a beautiful landscape image displayed in a card with a
+              title and description.
+            </p>
+          </CardContent>
+          <CardFooter className="flex justify-between items-center">
+            <span className="text-sm text-gray-500">Posted by John Doe</span>
+            <button className="text-blue-500 hover:text-blue-600">
+              Read more
+            </button>
+          </CardFooter>
+        </Card>
+      </div>
     ),
     code: `// RiMX UI Card Example
-<Card>
+<div className="place-items-center">
+  <Card>
     <img
         src="https://images.unsplash.com/photo-1682687220063-4742bd7fd538"
         alt="Card image"
@@ -87,33 +90,39 @@ const components = [
            Read more
         </button>
     </CardFooter>
-</Card>`,
+ </Card>
+</div>`,
   },
   {
     name: "Inputs",
     description: "Form inputs with validation, states, and style variants",
     demo: (
-      <form>
+      <form className="flex items-center justify-center flex-col ">
         <div>
           <Label>Email</Label>
-          <Input type="email" placeholder="Email" className="mb-4" />
+          <Input type="email" placeholder="Email" className="mb-4 text-black" />
         </div>
         <div>
           <Label>Password</Label>
-          <Input type="password" placeholder="Password" className="mb-4" />
+          <Input
+            type="password"
+            placeholder="Password"
+            className="mb-4 text-black"
+          />
         </div>
-        <Button label="Signup" className="text-white" />
+
+        <Button label="Signup" className="text-white " />
       </form>
     ),
     code: `// RiMX UI Input Examples
- <form>
+ <form className="flex items-center justify-center flex-col ">
     <div>
         <Label>Email</Label>
-        <Input type="email" placeholder="Email" className="mb-4" />
+        <Input type="email" placeholder="Email" className="mb-4 text-black" />
     </div>
     <div>
         <Label>Password</Label>
-        <Input type="password" placeholder="Password" className="mb-4" />
+        <Input type="password" placeholder="Password" className="mb-4 text-black" />
     </div>
         <Button label="Signup" className="text-white" />
 </form>`,
@@ -168,12 +177,12 @@ const components = [
         <ModalFooter>
         <ModalClose>
             <button className="w-full px-4 py-2 bg-emerald-600 text-white rounded">
-            OK
+              OK
             </button>
         </ModalClose>
         </ModalFooter>
     </ModalContent>
-    </Modal>`,
+</Modal>`,
   },
 ];
 
@@ -263,7 +272,7 @@ const DisplayComponents: React.FC = () => {
               {components[activeIndex].description}
             </p>
 
-            <div className="rounded-lg bg-gray-50 dark:bg-slate-900 p-6 min-h-[200px] flex items-center justify-center">
+            <div className="rounded-lg   bg-gray-50 dark:bg-slate-900 p-6 min-h-[200px] flex items-center justify-center">
               <AnimatePresence mode="wait">
                 <motion.div
                   key={`component-${activeIndex}-${isViewingCode ? "code" : "demo"}`}
@@ -310,7 +319,7 @@ const DisplayComponents: React.FC = () => {
                 <motion.button
                   key={index}
                   onClick={() => setActiveIndex(index)}
-                  className={`w-2 h-2 rounded-full ${
+                  className={`w-2 h-2 rounded-full  ${
                     index === activeIndex
                       ? "bg-blue-500"
                       : "bg-gray-300 dark:bg-slate-700"

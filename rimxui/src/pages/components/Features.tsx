@@ -106,7 +106,11 @@ const Features: React.FC = () => {
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.5, delay: 0.1 }}
             >
-              Why Choose RiMX UI?
+              Why Choose{" "}
+              <span className="bg-gradient-to-b from-zinc-900 to-zinc-500 dark:from-zinc-200 dark:to-zinc-900 bg-clip-text text-transparent font-bold">
+                R<span className="text-red-500 drop-shadow-md">i</span>MX UI
+              </span>
+              {" "} ?
             </motion.h2>
             <motion.p
               className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto"

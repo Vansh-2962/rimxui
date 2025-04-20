@@ -30,7 +30,7 @@ const Testimonials = () => {
   ];
 
   return (
-    <section className="py-16 px-4 dark:bg-black">
+    <section className="py-16 px-4 dark:bg-black" id="reviews">
       <PurpleBalls />
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-3xl md:text-4xl font-bold dark:text-white bg-gradient-to-b from-zinc-500 to-zinc-900  text-transparent bg-clip-text mb-4">
