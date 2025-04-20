@@ -38,7 +38,6 @@ const SidebarItem = ({
 
 const navigation = [
   { name: "Introduction", path: ROUTES.docs },
-  { name: "Getting Started", path: "#" },
   { name: "Installation", path: ROUTES.installation },
   { name: "Design System", path: ROUTES.designSystemDocs },
   { name: "Components", path: ROUTES.componentsOverview },
