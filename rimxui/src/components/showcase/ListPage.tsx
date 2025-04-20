@@ -1,7 +1,13 @@
-import { ListSizes, ListSpacings, ListType, ListVariants } from "@/types";
-import { List, ListItem } from "../list";
+import {
+  List,
+  ListItem,
+  ListSizes,
+  ListSpacings,
+  ListType,
+  ListVariants,
+} from "../List";
 import PreviewWrapper from "../PreviewWrapper";
-import { Typography } from "../typography/Typography";
+import { Typography } from "../Typography/Typography";
 import {
   ShowcaseAPIReference,
   ShowcaseGuidelines,

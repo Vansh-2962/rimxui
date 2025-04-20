@@ -1,3 +1,3 @@
 export * from "./countdown";
-export * from "./list";
-export * from "./typography";
+export * from "./List";
+export * from "./Typography";
