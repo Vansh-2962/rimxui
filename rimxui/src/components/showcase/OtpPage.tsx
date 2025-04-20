@@ -1,7 +1,6 @@
 import { CliTabs } from "../CliTabs/CliTab";
 import OtpInput from "../Otp/otp";
 import PreviewWrapper from "../PreviewWrapper";
-import { CliTabs } from "../CliTabs/CliTab";
 
 export default function OTPPage() {
   const handleOTPComplete = (otp: string) => {
