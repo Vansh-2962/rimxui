@@ -6,8 +6,7 @@ import ButtonPage from "@/components/showcase/ButtonPage";
 import { CardPage } from "@/components/showcase/CardPage";
 import { ModalPage } from "@/components/showcase/ModalPage";
 import { ToastPage } from "@/components/showcase/ToastPage";
-import { ColorShowcase } from "@/components/showcase/ColorShowcase";
-import { ColorUsageShowcase } from "@/components/showcase/ColorUsageShowcase";
+import { DesignSystemShowcase } from "@/components/showcase/DesignSystemShowcasePage";
 import ListPage from "@/components/showcase/ListPage";
 import ShadowShowcase from "@/components/showcase/ShadowShowcase";
 import { ShowcaseLayout } from "@/components/showcase/ShowcaseLayout";
@@ -32,7 +31,8 @@ import MorphedButton from "@/components/showcase/MorphedButton";
 import OTPPage from "@/components/showcase/OtpPage";
 import CliTabPage from "@/components/showcase/CliTabPage";
 import { LayoutPreview } from "@/components/showcase/LayoutPage";
-
+import IntroductionPage from "@/components/showcase/IntroductionPage";
+import ComponentsPage from "@/components/showcase/ComponentsPage";
 
 export const ROUTE_COMPONENTS: Array<RouteObject> = [
   {
@@ -49,7 +49,11 @@ export const ROUTE_COMPONENTS: Array<RouteObject> = [
     children: [
       {
         index: true,
-        element: <ColorShowcase />,
+        element: <IntroductionPage />,
+      },
+      {
+        path: ROUTES.componentsOverview,
+        element: <ComponentsPage />,
       },
       {
         path: CHILD_ROUTES.docs.navbarpage,
@@ -64,12 +68,8 @@ export const ROUTE_COMPONENTS: Array<RouteObject> = [
         element: <PaginationPage />,
       },
       {
-        path: CHILD_ROUTES.docs.colors,
-        element: <ColorShowcase />,
-      },
-      {
-        path: CHILD_ROUTES.docs.colorUsage,
-        element: <ColorUsageShowcase />,
+        path: CHILD_ROUTES.docs.designSystem,
+        element: <DesignSystemShowcase />,
       },
       {
         path: CHILD_ROUTES.docs.typography,
