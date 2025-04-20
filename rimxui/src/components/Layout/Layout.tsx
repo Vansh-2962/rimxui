@@ -146,8 +146,9 @@ export type PolymorphicComponent<
 const sizeToClass = (size: Size | undefined, prefix: string): string => {
   if (!size) return "";
 
-  if (size.includes("[") && size.includes("]")) {
-    return `${prefix}-${size}`;
+  if (typeof size === "string" && size.includes("[") && size.includes("]")) {
+    const arbitraryValue = size.slice(1, -1);
+    return `${prefix}-[${arbitraryValue}]`;
   }
 
   return `${prefix}-${size}`;
