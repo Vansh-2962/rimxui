@@ -38,6 +38,7 @@ export const ROUTES = {
   dump: "/dump",
   showcase: "/showcase",
   docs: "/docs",
+  installation: "/docs/installation",
   componentsOverview: `/docs/${CHILD_ROUTES.docs.components}`,
   designSystemDocs: `/docs/${CHILD_ROUTES.docs.designSystem}`,
   typographyDocs: `/docs/${CHILD_ROUTES.docs.typography}`,

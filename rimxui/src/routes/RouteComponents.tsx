@@ -33,6 +33,7 @@ import CliTabPage from "@/components/showcase/CliTabPage";
 import { LayoutPreview } from "@/components/showcase/LayoutPage";
 import IntroductionPage from "@/components/showcase/IntroductionPage";
 import ComponentsPage from "@/components/showcase/ComponentsPage";
+import Installation from "@/components/Installation/Installation";
 
 export const ROUTE_COMPONENTS: Array<RouteObject> = [
   {
@@ -50,6 +51,10 @@ export const ROUTE_COMPONENTS: Array<RouteObject> = [
       {
         index: true,
         element: <IntroductionPage />,
+      },
+      {
+        path: ROUTES.installation,
+        element: <Installation />,
       },
       {
         path: ROUTES.componentsOverview,
